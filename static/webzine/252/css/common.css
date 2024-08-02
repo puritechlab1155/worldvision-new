@@ -165,7 +165,7 @@
     .microsite .btn_myinfo {
         border-color: #fff;
         border-radius: 8px;
-        background-image: url('images/common/angle-down.svg');
+        background-image: url('images/common/angle-down.svg') no-repeat;
         -webkit-background-size: 40%;
         background-size: 40%;
     }
