@@ -66,7 +66,6 @@
     <script type="text/javascript" src="js/animateStyle.js"></script>
     <script type="text/javascript" src="js/pageCtrl.js"></script>
     <script type="text/javascript" src="js/protectImgText.js"></script>
-    <script src="js/jquery-1.12.4.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- //추가 css js 입력 -->
 </head>
@@ -84,62 +83,63 @@
             <a href="#footer">하단 영역 바로가기</a>
         </div>
         <!-- //스킵 NAV -->
-<!-- 전체 메뉴 팝업 -->
-<header id="header">
-    <!-- 상단 메뉴 -->
-    <div class="header_wrap">
-        <div class="logo">
-            <h1><a href="index.html"><img src="images/common/logo.png" alt="한국월드비전 웹진"><span class="hide">한국월드비전
-                        웹진</span></a></h1>
-        </div>
-        <div id="content-container" data-include-path="inc/util-vol.html"></div>
-        <div class="menu">
-            <button type="button">MENU</button>
-        </div>
-        <!-- <div class="angles mobile_display">
-            <img src="images/common/angle-down.svg" alt="아래로 펼치기" class="down">
-        </div> -->
-    </div>
-    <!-- //상단 메뉴 -->
-</header>
-<div class="my_gnb" id="my_gnb">
-    <div class="gnb_wrap">
-        <div class="mn_top">
-            <div id="content-container" data-include-path="inc/util-vol-mobile.html"></div>
-            <div class="close_btn"><img src="images/common/menu-close.svg" alt="메뉴 닫기"></div>
-        </div>
-        <div id="content-container" data-include-path="inc/util-nav.html"></div>
-    </div>
-</div>
-<div class="my_gnb02 mobile_display" id="my_gnb02">
-    <div class="my_info02">
-        <a href="javascript:void(0);" class="btn_myinfo02"><span class="hide">최상단 메뉴</span></a>
-        <div class="my_lyr02">
-            <a href="javascript:void(0);" class="btn_myinfo02"><span class="hide">최상단 메뉴</span></a>
-            <div id="content-container" data-include-path="inc/util-login.html"></div>
-        </div>
-    </div>
-</div>
-<!-- //전체 메뉴 팝업 -->
-<script>
-    $('.my_gnb .gnb_wrap').hide();
 
-    $('.menu').click(function(){
-        $('.my_gnb').addClass('on');
-        $('.my_gnb .gnb_wrap').slideDown();
-    });
-    $('.close_btn').click(function(){
-        $('.my_gnb').removeClass('on');
-        $('.my_gnb .gnb_wrap').slideUp();
-    });
-</script>
- <script>
-    $('.my_gnb02').hide();
-    $('.angles').click(function(){
-        $('.my_gnb02').toggle();
-    });
-</script>
+       
+        <!-- 전체 메뉴 팝업 -->
+        <header id="header">
+            <!-- 상단 메뉴 -->
+            <div class="header_wrap">
+                <div class="logo">
+                    <h1><a href="index.html"><img src="images/common/logo.png" alt="한국월드비전 웹진"><span class="hide">한국월드비전
+                                웹진</span></a></h1>
+                </div>
+                <div id="content-container" data-include-path="https://puritechlab1155.github.io/worldvision/static/webzine/vol252/inc/util-vol.html"></div>
+                <div class="menu">
+                    <button type="button">MENU</button>
+                </div>
+                <div class="angles mobile_display">
+                    <img src="images/common/angle-down.svg" alt="아래로 펼치기" class="down">
+                </div>
+            </div>
+            <!-- //상단 메뉴 -->
+        </header>
+        <div class="my_gnb" id="my_gnb">
+        	<div class="gnb_wrap">
+                <div class="mn_top">
+                    <div id="content-container" data-include-path="https://puritechlab1155.github.io/worldvision/static/webzine/vol252/inc/util-vol-mobile.html"></div>
+                    <div class="close_btn"><img src="images/common/menu-close.svg" alt="메뉴 닫기"></div>
+                </div>
+                <div id="content-container" data-include-path="https://puritechlab1155.github.io/worldvision/static/webzine/vol252/inc/util-nav2.html"></div>
+            </div>
+        </div>
+        <div class="my_gnb02 mobile_display" id="my_gnb02">
+            <div class="my_info02">
+                <a href="javascript:void(0);" class="btn_myinfo02"><span class="hide">최상단 메뉴</span></a>
+                <div class="my_lyr02">
+                    <a href="javascript:void(0);" class="btn_myinfo02"><span class="hide">최상단 메뉴</span></a>
+                    <div id="content-container" data-include-path="https://puritechlab1155.github.io/worldvision/static/webzine/vol252/inc/util-login.html"></div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $('.my_gnb .gnb_wrap').hide();
 
+            $('.menu').click(function(){
+                $('.my_gnb').addClass('on');
+                $('.my_gnb .gnb_wrap').slideDown();
+            });
+            $('.close_btn').click(function(){
+                $('.my_gnb').removeClass('on');
+                $('.my_gnb .gnb_wrap').slideUp();
+            });
+        </script>
+         <script>
+            $('.my_gnb02').hide();
+            $('.angles').click(function(){
+                $('.my_gnb02').toggle();
+            });
+        </script>
+        <!-- //전체 메뉴 팝업 -->
         <!-- 콘텐츠 -->
         <section id="container">
             <div class="cover">
@@ -192,6 +192,11 @@
 
                 <div class="article_area">
                     <article class="art">
+                        <div class="art_title pc_display">
+                            “가족돌봄청소년을 아시나요?” <br>
+                            국내사업 담당자와 함께하는 <br>
+                            &lt;새파란 돌봄&gt; 독서모임
+                        </div>
                         <div class="art_title mobile_display">
                             <span>“가족돌봄청소년을 아시나요?”</span> <br>
                             국내사업 담당자와 함께하는 <br>&lt;새파란 돌봄&gt; 독서모임
@@ -202,8 +207,6 @@
                                 3주간 9명의 참여자들은 황병욱 대리의 안내로 조기현 작가의 &lt;새파란 돌봄&gt;을 함께 읽었습니다.
                             </p>
                             <div class="img_box reading_group_anim">
-                                <!-- <img src="images/patrons/reading-group.jpg"
-                                    alt="&lt;새파란 돌봄&gt; 독서모임에 참여한 참여자들. 가족돌봄청소년이라는 개념을 이 모임을 통해서 처음 알게 되었어요. 이런 어려움을 겪는 청소년은 없는지 찾아보고 또 주변 사람들에게도 알리고 있어요 - 3회 모두 참석했던 다정다감귤님"> -->
                                 <div class="anim_cont">
                                     <img src="images/patrons/reading-club-vector.jpg"
                                     alt="&lt;새파란 돌봄&gt; 독서모임에 참여한 참여자들. 가족돌봄청소년이라는 개념을 이 모임을 통해서 처음 알게 되었어요. 이런 어려움을 겪는 청소년은 없는지 찾아보고 또 주변 사람들에게도 알리고 있어요 - 3회 모두 참석했던 다정다감귤님" class="cont_vector">
@@ -260,8 +263,6 @@
                                     알리는 ‘그린 인플루언서’가 되시길 기대합니다”라며 바람을 전했습니다.
                                 </p>
                                 <div class="img_box last clean_hiking_anim">
-                                    <!-- <img src="images/patrons/clean-hiking.jpg"
-                                        alt="클린 하이킹 모임 참여자들. 더 많은 사람들이 이 활동에 동참할 수 있도록 알리는 '그린 인플루언서'가 되시길 기대합니다 - 클린 하이커스 김강은 리더"> -->
                                     <div class="anim_cont01"><img src="images/patrons/clean-hiking01.png"
                                         alt="클린 하이킹 모임 참여자들. 더 많은 사람들이 이 활동에 동참할 수 있도록 알리는 '그린 인플루언서'가 되시길 기대합니다 - 클린 하이커스 김강은 리더"></div>
                                     <div class="anim_cont02"><img src="images/patrons/clean-hiking02.png"
@@ -325,9 +326,7 @@
                                 얼마나 많은 쓰레기를 발생시키고 있는지 눈으로 직접 확인했을 때였어요. 지금은 습관이 된 것 같아도 생활하다 보면 해이해질 때가 올 거예요. 그럴 때마다
                                 배출했던 쓰레기를 다시 살펴보고 하나하나 실천해 가시길 바라겠습니다”라며 지속적인 실천을 당부했습니다.
                             </p>
-                            <div class="img_box last challengers_anim_cont">
-                                <!-- <img src="images/patrons/challengers.jpg"
-                                    alt="제가 텀블러를 즐겨 쓰게 됐던 이유는 일회용품이 얼마나 많은 쓰레기를 발생 시키고 있는지 눈으로 직접 확인했을 때였어요 - &lt;모레상점&gt; 이지은 대표(가운데). 친환경 도시락 모임의 참여자들. 쓰레기 줍기 활동"> -->
+                            <div class="img_box last challengers_anim">
                                 <div class="anim_cont01"><img src="images/patrons/challengers01.png"
                                     alt="제가 텀블러를 즐겨 쓰게 됐던 이유는 일회용품이 얼마나 많은 쓰레기를 발생 시키고 있는지 눈으로 직접 확인했을 때였어요 - &lt;모레상점&gt; 이지은 대표(가운데). 친환경 도시락 모임의 참여자들. 쓰레기 줍기 활동"></div>
                                 <div class="anim_cont02">
@@ -336,9 +335,24 @@
                                 </div>
                                 <div class="anim_cont03"><img src="images/patrons/challengers03.png"
                                     alt="제가 텀블러를 즐겨 쓰게 됐던 이유는 일회용품이 얼마나 많은 쓰레기를 발생 시키고 있는지 눈으로 직접 확인했을 때였어요 - &lt;모레상점&gt; 이지은 대표(가운데). 친환경 도시락 모임의 참여자들. 쓰레기 줍기 활동"></div>
-                                <div class="anim_cont03"><img src="images/patrons/challengers04.png"
+                                <div class="anim_cont04"><img src="images/patrons/challengers04.png"
                                     alt="제가 텀블러를 즐겨 쓰게 됐던 이유는 일회용품이 얼마나 많은 쓰레기를 발생 시키고 있는지 눈으로 직접 확인했을 때였어요 - &lt;모레상점&gt; 이지은 대표(가운데). 친환경 도시락 모임의 참여자들. 쓰레기 줍기 활동"></div>
                             </div>
+                            <script>
+                                // scroll event
+                                $(window).scroll(function(){
+                                    var st = $(this).scrollTop();
+                                    var evTop = $('.challengers_anim').offset().top - 500;
+                            
+                                    if(st>=evTop){
+                                        $('.challengers_anim > .anim_cont02 > img').addClass('on');
+                                        $('.challengers_anim > .anim_cont03 > img').addClass('on');
+                                    }else{
+                                        $('.challengers_anim > .anim_cont02 > img').removeClass('on');
+                                        $('.challengers_anim > .anim_cont03 > img').removeClass('on');
+                                    }
+                                });
+                            </script>
                         </div>
                     </article>
                     <article class="art">
@@ -418,11 +432,17 @@
             });
         </script>
 
-        <!-- 플로팅 버튼 
+        <!-- 플로팅 버튼 -->
         <div id="floating">
         </div>
-         //플로팅 버튼 -->
+        <!-- //플로팅 버튼 -->
     </div>
+
+    <script type="text/javascript" src="/resources/wvFrt/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/resources/wvFrt/js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="/resources/wvFrt/js/swiper.min.js"></script>
+    <script type="text/javascript" src="/resources/wvFrt/js/ui.js"></script>
+    <script type="text/javascript" src="/resources/wvFrt/js/cmsModule.js"></script>
 </body>
 
 </html>
