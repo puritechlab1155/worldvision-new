@@ -204,28 +204,6 @@ img {
 .campaign .cover .cover_outer .main_area .img_box { margin: 0 auto; text-align: center; }
 .campaign .cover .cover_outer .main_area img { width: 100%; min-height: 170px;}
 
-
-/* 화살표 동그라미 애니메이션 */
-.campaign .cover .cover_inner .item_img  {position: relative;}
-.campaign .cover .cover_inner .item_img img {display: block;}
-.campaign .cover .cover_inner .item_img::before {content: '';position: absolute;bottom: 1%;left: 50%;transform: translateX(-50%);width: 200%; /* 반짝이는 효과의 너비 */height: 25%; /* 반짝이는 효과의 높이 */border-radius: 50%; /* 둥근 모양 */
-    box-shadow: 0 0 20px rgba(240, 100, 0, 0.5);
-    animation: sparkleAnimation 1.5s infinite alternate;
-    pointer-events: none; /* 가상 요소가 클릭 이벤트를 방해하지 않도록 설정 */
-}
-/* 애니메이션 정의 */
-@keyframes sparkleAnimation {
-    0% {
-        box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
-    }
-    50% {
-        box-shadow: 0 0 30px rgba(240, 100, 0, 0.8);
-    }
-    100% {
-        box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
-    }
-}
-
 .campaign .cover .cover_inner { display: flex; flex-direction: column; position: absolute; left: 50%; transform: translateX(-50%); bottom: 0; justify-content: center; text-align: center; }
 .campaign .cover .cover_inner .main_copy h2 { font-weight: 500; font-size: 32px; line-height: 42px; }
 .campaign .cover .cover_inner .main_copy h2 span { font-weight: 500; font-size: 14px; line-height: 24px; display: block; }
@@ -333,7 +311,7 @@ img {
 .main_idx #main #container .section02 #inner_wrap .contents03 .text_box h2 { margin: 30px 0; }
 .main_idx #main #container .section02 #inner_wrap .contents01 .img_box { position: relative; }
 .main_idx #main #container .section02 #inner_wrap .contents01 .img_box img { transition: transform 0.2s ease-in-out, transform-origin 0.2s ease-in-out; }
-.main_idx #main #container .section02 #inner_wrap .contents01 .img_box img {animation: scaleAnimation 3.5s infinite; /* 애니메이션을 3초 동안 무한 반복합니다. */ }
+.main_idx #main #container .section02 #inner_wrap .contents01 .img_box img {animation: scaleAnimation 5s infinite; /* 애니메이션을 3초 동안 무한 반복합니다. */ }
 /* 이미지 애니메이션을 정의합니다. */
 @keyframes scaleAnimation {
    0% {
@@ -501,15 +479,15 @@ img {
 @keyframes rotateAndPulse {
     0% {
         transform: scale(1) rotate(0deg);
-        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.3);
     }
     50% {
         transform: scale(1.2) rotate(180deg);
-        box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.8);
+        box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.2);
     }
     100% {
         transform: scale(1) rotate(360deg);
-        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.3);
     }
 }
 
@@ -544,15 +522,15 @@ img {
 @keyframes rotateAndPulse {
     0% {
         transform: scale(1) rotate(0deg);
-        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.2);
     }
     50% {
         transform: scale(1.2) rotate(180deg);
-        box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.8);
+        box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.3);
     }
     100% {
         transform: scale(1) rotate(360deg);
-        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.2);
     }
 }
 
@@ -590,15 +568,15 @@ img {
 @keyframes rotateAndPulse {
     0% {
         transform: scale(1) rotate(0deg);
-        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.2);
     }
     50% {
         transform: scale(1.2) rotate(180deg);
-        box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.8);
+        box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.3);
     }
     100% {
         transform: scale(1) rotate(360deg);
-        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.2);
     }
 }
 
