@@ -66,7 +66,6 @@
     <script type="text/javascript" src="js/animateStyle.js"></script>
     <script type="text/javascript" src="js/pageCtrl.js"></script>
     <script type="text/javascript" src="js/protectImgText.js"></script>
-    <script src="js/jquery-1.12.4.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- //추가 css js 입력 -->
 </head>
@@ -86,61 +85,63 @@
             <a href="#footer">하단 영역 바로가기</a>
         </div>
         <!-- //스킵 NAV -->
-<!-- 전체 메뉴 팝업 -->
-<header id="header">
-    <!-- 상단 메뉴 -->
-    <div class="header_wrap">
-        <div class="logo">
-            <h1><a href="index.html"><img src="images/common/logo.png" alt="한국월드비전 웹진"><span class="hide">한국월드비전
-                        웹진</span></a></h1>
-        </div>
-        <div id="content-container" data-include-path="inc/util-vol.html"></div>
-        <div class="menu">
-            <button type="button">MENU</button>
-        </div>
-        <!-- <div class="angles mobile_display">
-            <img src="images/common/angle-down.svg" alt="아래로 펼치기" class="down">
-        </div> -->
-    </div>
-    <!-- //상단 메뉴 -->
-</header>
-<div class="my_gnb" id="my_gnb">
-    <div class="gnb_wrap">
-        <div class="mn_top">
-            <div id="content-container" data-include-path="inc/util-vol-mobile.html"></div>
-            <div class="close_btn"><img src="images/common/menu-close.svg" alt="메뉴 닫기"></div>
-        </div>
-        <div id="content-container" data-include-path="inc/util-nav.html"></div>
-    </div>
-</div>
-<div class="my_gnb02 mobile_display" id="my_gnb02">
-    <div class="my_info02">
-        <a href="javascript:void(0);" class="btn_myinfo02"><span class="hide">최상단 메뉴</span></a>
-        <div class="my_lyr02">
-            <a href="javascript:void(0);" class="btn_myinfo02"><span class="hide">최상단 메뉴</span></a>
-            <div id="content-container" data-include-path="inc/util-login.html"></div>
-        </div>
-    </div>
-</div>
-<!-- //전체 메뉴 팝업 -->
-<script>
-    $('.my_gnb .gnb_wrap').hide();
 
-    $('.menu').click(function(){
-        $('.my_gnb').addClass('on');
-        $('.my_gnb .gnb_wrap').slideDown();
-    });
-    $('.close_btn').click(function(){
-        $('.my_gnb').removeClass('on');
-        $('.my_gnb .gnb_wrap').slideUp();
-    });
-</script>
- <script>
-    $('.my_gnb02').hide();
-    $('.angles').click(function(){
-        $('.my_gnb02').toggle();
-    });
-</script>
+        
+        <!-- 전체 메뉴 팝업 -->
+        <header id="header">
+            <!-- 상단 메뉴 -->
+            <div class="header_wrap">
+                <div class="logo">
+                    <h1><a href="index.html"><img src="images/common/logo.png" alt="한국월드비전 웹진"><span class="hide">한국월드비전
+                                웹진</span></a></h1>
+                </div>
+                <div id="content-container" data-include-path="https://puritechlab1155.github.io/worldvision/static/webzine/vol252/inc/util-vol.html"></div>
+                <div class="menu">
+                    <button type="button">MENU</button>
+                </div>
+                <div class="angles mobile_display">
+                    <img src="images/common/angle-down.svg" alt="아래로 펼치기" class="down">
+                </div>
+            </div>
+            <!-- //상단 메뉴 -->
+        </header>
+        <div class="my_gnb" id="my_gnb">
+        	<div class="gnb_wrap">
+                <div class="mn_top">
+                    <div id="content-container" data-include-path="https://puritechlab1155.github.io/worldvision/static/webzine/vol252/inc/util-vol-mobile.html"></div>
+                    <div class="close_btn"><img src="images/common/menu-close.svg" alt="메뉴 닫기"></div>
+                </div>
+                <div id="content-container" data-include-path="https://puritechlab1155.github.io/worldvision/static/webzine/vol252/inc/util-nav2.html"></div>
+            </div>
+        </div>
+        <div class="my_gnb02 mobile_display" id="my_gnb02">
+            <div class="my_info02">
+                <a href="javascript:void(0);" class="btn_myinfo02"><span class="hide">최상단 메뉴</span></a>
+                <div class="my_lyr02">
+                    <a href="javascript:void(0);" class="btn_myinfo02"><span class="hide">최상단 메뉴</span></a>
+                    <div id="content-container" data-include-path="https://puritechlab1155.github.io/worldvision/static/webzine/vol252/inc/util-login.html"></div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $('.my_gnb .gnb_wrap').hide();
+
+            $('.menu').click(function(){
+                $('.my_gnb').addClass('on');
+                $('.my_gnb .gnb_wrap').slideDown();
+            });
+            $('.close_btn').click(function(){
+                $('.my_gnb').removeClass('on');
+                $('.my_gnb .gnb_wrap').slideUp();
+            });
+        </script>
+         <script>
+            $('.my_gnb02').hide();
+            $('.angles').click(function(){
+                $('.my_gnb02').toggle();
+            });
+        </script>
+        <!-- //전체 메뉴 팝업 -->
 
         <!-- 콘텐츠 -->
         <section id="container">
@@ -193,7 +194,7 @@
                     </div>
 
                     <audio id="audio"
-                        src="audio/flyingSeagull/fly.mp3"
+                        src="audio/flyingSeagull/MONITOR_%ED%8E%B8%EC%A7%91%EB%B3%B8_%EC%88%98%EC%A0%95_%EB%86%92%EC%9D%B4%20%EB%82%98%EB%8A%94%20%EA%B0%88%EB%A7%A4%EA%B8%B0.mp3"
                         type="audio/mp3"></audio>
 
                     <script>
@@ -363,8 +364,35 @@
                                 있었기 때문일까요? 혜원이는 스스로 소아암 환자를 위해 머리를 길러 모발 기부에도 2번이나 참여했습니다. “제가 아직 금전적으로 도움이 될 수 없으니까 할 수
                                 있는 일을 고민하다가 참여했어요. 진짜 뿌듯했어요.”
                             </p>
-                            <div class="img_box"><img src="images/flyingSeagull/learning.jpg"
-                                    alt="팀을 위해 희생하면서 더불어 협력해서 살아가는 삶의 가치와 태도를 배웠습니다"></div>
+                            <!-- <div class="img_box"><img src="images/flyingSeagull/learning.jpg"
+                                    alt="팀을 위해 희생하면서 더불어 협력해서 살아가는 삶의 가치와 태도를 배웠습니다"></div> -->
+                            <div class="img_box learning_anim">
+                                <div class="anim_cont01">
+                                    <img src="images/flyingSeagull/learning01.png"
+                                        alt="팀을 위해 희생하면서 더불어 협력해서 살아가는 삶의 가치와 태도를 배웠습니다" class="cont01">
+                                    <img src="images/flyingSeagull/learning02.png"
+                                        alt="팀을 위해 희생하면서 더불어 협력해서 살아가는 삶의 가치와 태도를 배웠습니다" class="cont02">
+                                </div>
+                                <div class="anim_cont02">
+                                    <img src="images/flyingSeagull/learning03.png"
+                                        alt="팀을 위해 희생하면서 더불어 협력해서 살아가는 삶의 가치와 태도를 배웠습니다" class="cont03">
+                                </div>
+                            </div>
+                            <script>
+                                // scroll event
+                                $(window).scroll(function(){
+                                    var st = $(this).scrollTop();
+                                    var evTop = $('.learning_anim').offset().top - 500;
+                            
+                                    if(st>=evTop){
+                                        $('.learning_anim > .anim_cont01 > .cont02').addClass('on');
+                                        $('.learning_anim > .anim_cont02 > .cont03').addClass('on');
+                                    }else{
+                                        $('.learning_anim > .anim_cont01 > .cont02').removeClass('on');
+                                        $('.learning_anim > .anim_cont02 > .cont03').removeClass('on');
+                                    }
+                                });
+                            </script>
                             <p>
                                 혜원이는 자신이 가장 잘하는 ‘수영’과 가장 좋아하는 음식인 ‘빵’을 접목해 ‘빵 굽는 수영선수’가 되고 싶다고 말했습니다.
                                 혜원이는 언젠가 장애인 국가대표 수영선수로 패럴림픽에 출전해 가슴에 태극마크를 달고 경기를 펼치는 꿈을 꿉니다. 그리고 그 꿈을 이루고 나면 맛있는 빵을
@@ -423,11 +451,17 @@
             });
         </script>
 
-        <!-- 플로팅 버튼
+        <!-- 플로팅 버튼 -->
         <div id="floating">
         </div>
-         //플로팅 버튼 -->
+        <!-- //플로팅 버튼 -->
     </div>
+
+    <script type="text/javascript" src="/resources/wvFrt/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/resources/wvFrt/js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="/resources/wvFrt/js/swiper.min.js"></script>
+    <script type="text/javascript" src="/resources/wvFrt/js/ui.js"></script>
+    <script type="text/javascript" src="/resources/wvFrt/js/cmsModule.js"></script>
 </body>
 
 </html>
