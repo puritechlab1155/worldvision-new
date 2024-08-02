@@ -581,7 +581,7 @@ img {
     .web04 .contents_area .article_area article .art_conts .closing  img{width: 100%;height: 100%;} 
     .web04 .contents_area .article_area article .art_conts .closing::before { content: '';position: absolute;top: 0;left: 0;width: 100%;height: 100%;
     box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.8);
-    animation: rotateAndPulse 3s infinite;
+    animation: rotateAndPulse 3s infinite;}
 }
 /* 애니메이션 정의 */
 @keyframes rotateAndPulse {
