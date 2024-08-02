@@ -1,0 +1,314 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+/* font-family: "Noto Sans KR", sans-serif; */
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 100;
+    src: url(../fonts/Pretendard-Thin.otf) format('opentype');
+    src: url(../fonts/Pretendard-Thin.woff) format('woff');
+    src: url(../fonts/Pretendard-Thin.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 200;
+    src: url(../fonts/Pretendard-ExtraLight.otf) format('opentype');
+    src: url(../fonts/Pretendard-ExtraLight.woff) format('woff');
+    src: url(../fonts/Pretendard-ExtraLight.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/Pretendard-Light.otf) format('opentype');
+    src: url(../fonts/Pretendard-Light.woff) format('woff');
+    src: url(../fonts/Pretendard-Light.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Pretendard-Regular.otf) format('opentype');
+    src: url(../fonts/Pretendard-Regular.woff) format('woff');
+    src: url(../fonts/Pretendard-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/Pretendard-Medium.otf) format('opentype');
+    src: url(../fonts/Pretendard-Medium.woff) format('woff');
+    src: url(../fonts/Pretendard-Medium.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    src: url(../fonts/Pretendard-SemiBold.otf) format('opentype');
+    src: url(../fonts/Pretendard-SemiBold.woff) format('woff');
+    src: url(../fonts/Pretendard-SemiBold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/Pretendard-Bold.otf) format('opentype');
+    src: url(../fonts/Pretendard-Bold.woff) format('woff');
+    src: url(../fonts/Pretendard-Bold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 800;
+    src: url(../fonts/Pretendard-ExtraBold.otf) format('opentype');
+    src: url(../fonts/Pretendard-ExtraBold.woff) format('woff');
+    src: url(../fonts/Pretendard-ExtraBold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 900;
+    src: url(../fonts/Pretendard-Black.otf) format('opentype');
+    src: url(../fonts/Pretendard-Black.woff) format('woff');
+    src: url(../fonts/Pretendard-Black.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'MYRIADPRO-BOLDCOND';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/MYRIADPRO-BOLD.OTF) format('opentype');
+    src: url(../fonts/MYRIADPRO-BOLD.woff) format('woff');
+    src: url(../fonts/MYRIADPRO-BOLD.woff2) format('woff2');
+}
+
+.pc_display {
+    display: block;
+}
+
+.mobile_display {
+    display: none;
+}
+
+@media only all and (max-width: 767px) {
+    .pc_display {
+        display: none;
+    }
+
+    .mobile_display {
+        display: block;
+    }
+}
+
+/* 
+아래의 <style> 코드는 마이크로사이트의 gnb/컨텐츠 영역과 너비에 맞춰 월드비전의 최상단 gnb와 footer의 너비를 조정할 수 있는 코드입니다. 
+조정 후 마이크로사이트 만의 css 파일에 해당 코드도 추가 삽입을 바랍니다. 조정을 안하신다면 삭제 해주시기 바랍니다.
+*/
+#header.microsite,
+#footer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*padding-left와 padding-right로 좌측 로고와 우측 util 네비게이션, 풋더의 바깥 여백 조정 가능.*/
+#header.microsite .header_wrap,
+#footer .footer_wrap {
+    max-width: 1200px
+}
+
+/*max-width로 좌측 로고와 우측 util 네비게이션 영역, 풋더 영역 너비 조정 가능.*/
+
+/* 20240730 util 메뉴 로고 삭제 및 로그인 영역 위치 조정 */
+#header.microsite .header_wrap {
+    height: 32px
+}
+
+.microsite .header_wrap .header_logo,
+.microsite .header_wrap .header_logo img {
+    display: none
+}
+
+.microsite .header_util .my_info .my_lyr {
+    word-break: keep-all;
+}
+
+@media only all and (max-width: 767px) {
+    #header.microsite {
+        padding: 0
+    }
+
+    #header.microsite .header_wrap {
+        height: 0;
+        padding: 0
+    }
+
+    #header.microsite .header_wrap .header_util .my_info {
+        top: 22px;
+        right: 20px
+    }
+
+    .campaign #header .header_wrap .menu {
+        margin-right: 40px
+    }
+
+    .microsite .btn_myinfo {
+        border-color: #fff;
+        border-radius: 8px;
+        background-image: url('images/common/angle-down.svg');
+        -webkit-background-size: 40%;
+        background-size: 40%;
+    }
+
+    .microsite .header_util .my_info .my_lyr {
+        right: -20px
+    }
+}
+
+/* //20240730 util 메뉴 로고 삭제 및 로그인 영역 위치 조정 */
+
+
+/* margin class */
+.margin_auto {
+    margin: 0 auto;
+}
+
+.m_top20 {
+    margin-top: 20px;
+}
+
+.m_top30 {
+    margin-top: 30px;
+}
+
+.m_top50 {
+    margin-top: 50px;
+}
+
+.m_top80 {
+    margin-top: 80px;
+}
+
+.m_top100 {
+    margin-top: 100px;
+}
+
+.m_50to30 {
+    margin-top: 50px;
+}
+
+.first {
+    margin-top: 0 !important;
+}
+
+.last {
+    margin-bottom: 0 !important;
+}
+
+@media only all and (max-width: 767px) {
+    .m_50to30 {
+        margin-top: 30px;
+    }
+}
+
+/* custom class */
+#container #inner_wrap {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.display_flex {
+    display: flex;
+}
+
+.flex_wide1 {
+    flex: 1;
+}
+
+.flex_wrap {
+    flex-wrap: wrap;
+}
+
+.flex_basis50 {
+    flex-basis: 50%;
+}
+
+.flex_column {
+    flex-direction: column;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background: #fff;
+}
+
+body {
+    word-break: normal;
+    font-family: 'Noto Sans Kr', sans-serif;
+    font-size: 18px;
+}
+
+img {
+    max-width: 100%;
+}
+
+body p {
+    letter-spacing: -0.02em;
+}
