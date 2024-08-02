@@ -470,15 +470,15 @@ img {
 @keyframes rotateAndPulse {
     0% {
         transform: scale(1) rotate(0deg);
-        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.2);
     }
     50% {
         transform: scale(1.2) rotate(180deg);
-        box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.3);
     }
     100% {
         transform: scale(1) rotate(360deg);
-        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.2);
     }
 }
 
@@ -543,15 +543,15 @@ img {
 @keyframes rotateAndPulse {
     0% {
         transform: scale(1) rotate(0deg);
-        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.2);
     }
     50% {
         transform: scale(1.2) rotate(180deg);
-        box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.3);
     }
     100% {
         transform: scale(1) rotate(360deg);
-        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.2);
     }
 }
 
