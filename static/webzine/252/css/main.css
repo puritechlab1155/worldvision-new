@@ -476,9 +476,9 @@ img {
 .web03 .challengers_anim .anim_cont03 img.on { transform: translateY(0); opacity: 1; }
 .web03 .challengers_anim .anim_cont04 { position: relative; z-index: 2; }
 
-.web03 .contents_area .article_area article .art_conts .closing {position: relative;overflow: hidden;width: 60%;height: auto;margin: 150px 0;}
-.web03 .contents_area .article_area article .art_conts .closing img{width: 100%;height: 100%;} 
-.web03 .contents_area .article_area article .art_conts .closing::before { content: '';position: absolute;top: 0;left: 0;width: 100%;height: 100%;box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.5);animation: rotateAndPulse 3s infinite;}
+.web03 .contents_area .article_area article .art_conts .closing .pc_display{position: relative;overflow: hidden;width: 60%;height: auto;margin: 150px 0;}
+.web03 .contents_area .article_area article .art_conts .closing .pc_display img{width: 100%;height: 100%;} 
+.web03 .contents_area .article_area article .art_conts .closing.pc_display::before { content: '';position: absolute;top: 0;left: 0;width: 100%;height: 100%;box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.5);animation: rotateAndPulse 3s infinite;}
 /* 애니메이션 정의 */
 @keyframes rotateAndPulse {
     0% {
@@ -494,6 +494,28 @@ img {
         box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.3);
     }
 }
+
+.web03 .contents_area .article_area article .art_conts .closing .mobile_display{position: relative;overflow: hidden;width: 100%;height: auto;margin: 150px 0;}
+.web03 .contents_area .article_area article .art_conts .closing .mobile_displayimg{width: 100%;height: 100%;} 
+.web03 .contents_area .article_area article .art_conts .closing.mobile_display::before { content: '';position: absolute;top: 0;left: 0;width: 100%;height: 100%;box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.5);animation: rotateAndPulse 3s infinite;}
+/* 애니메이션 정의 */
+@keyframes rotateAndPulse {
+    0% {
+        transform: scale(1) rotate(0deg);
+        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.3);
+    }
+    50% {
+        transform: scale(1.2) rotate(180deg);
+        box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.2);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.3);
+    }
+}
+
+
+
 
 @media only all and (max-width: 767px) {
     .web03 .cover .cover_inner .item_img { margin: 11px auto 0; }
