@@ -639,6 +639,15 @@ img {
 .web07 .contents_area .article_area article .art_conts .cap span { font-weight: 700; font-size: 12px; line-height: 22px; color: #f56400; }
 .web07 .contents_area .article_area article .art_conts .cap em { font-weight: 400; font-size: 12px; line-height: 22px; }
 
+.web07 .motive_anim .anim_cont01 { position: relative; z-index: 2; }
+.web07 .motive_anim .anim_cont02 { position: relative; z-index: 1; }
+.web07 .motive_anim .anim_cont02 img { transform: translateY(-100%); opacity: 0; transition: 0.5s; }
+.web07 .motive_anim .anim_cont02 img.on { transform: translateY(0); opacity: 1; }
+.web07 .delivery_plaque_anim .anim_cont01 { position: relative; z-index: 2; }
+.web07 .delivery_plaque_anim .anim_cont02 { position: relative; z-index: 1; }
+.web07 .delivery_plaque_anim .anim_cont02 img { transform: translateY(-100%); opacity: 0; transition: 0.5s; }
+.web07 .delivery_plaque_anim .anim_cont02 img.on { transform: translateY(0); opacity: 1; }
+
 @media only all and (max-width: 767px) {
     .web07 .cover .cover_inner { bottom: 4%; }
     .web07 .cover .cover_inner .item_img { margin: 11px auto 0; }

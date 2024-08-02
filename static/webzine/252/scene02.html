@@ -202,8 +202,29 @@
                                 열심히 살아왔어요. 그러다 어느 정도 목표를 달성하고 나니 좀 허무해지는 순간이 있더라고요. 내가 이룬 것들이 다 나의 열심만으로 된 것이 아니라는 생각이
                                 들었어요. 그렇게 제 삶을 돌아보면서 내가 해야 할 일들에 대해 다시 생각해 보게 되었습니다.”
                             </p>
-                            <div class="img_box"><img src="images/scene02/motive.jpg"
-                                    alt="제 삶을 돌아보면서 내가 해야 할 일들에 대해 다시 생각해 보게 되었습니다"></div>
+                            <div class="img_box motive_anim">
+                                <div class="anim_cont01">
+                                    <img src="images/scene02/motive01.jpg"
+                                        alt="제 삶을 돌아보면서 내가 해야 할 일들에 대해 다시 생각해 보게 되었습니다">
+                                </div>
+                                <div class="anim_cont02">
+                                    <img src="images/scene02/motive02.jpg"
+                                        alt="제 삶을 돌아보면서 내가 해야 할 일들에 대해 다시 생각해 보게 되었습니다">
+                                </div>
+                            </div>
+                            <script>
+                                // scroll event
+                                $(window).scroll(function(){
+                                    var st = $(this).scrollTop();
+                                    var evTop = $('.motive_anim').offset().top - 500;
+                            
+                                    if(st>=evTop){
+                                        $('.motive_anim > .anim_cont02 > img').addClass('on');
+                                    }else{
+                                        $('.motive_anim > .anim_cont02 > img').removeClass('on');
+                                    }
+                                });
+                            </script>
                             <p>
                                 월드비전과 후원아동 300명과의 만남은 이렇게 시작되었습니다. “나눔을 실천하며 자신의 역할을 하고 있는 분의 유튜브 영상을 보고 나 자신에 대한 반성을
                                 했어요. 그리고 저는 크리스천이거든요. 제가 이룬 것들이 모두 은혜 덕분이라 믿어요. 그래서 그 은혜를 입은 자로서 다른 이들을 돌아보고 나눔을 실천하며
@@ -246,8 +267,29 @@
                                     나눔의 가치를 알리는 데 앞장서는 후원자를 회원으로 위촉한다.
                                 </em>
                             </div>
-                            <div class="img_box"><img src="images/scene02/delivery-plaque.jpg"
-                                    alt="이룬 것이 많아 보이지만, 저는 참 미약한 존재입니다. 그런 제가 주변을 돌아보고 나눌 수 있는 마음과 여건을 주셔서 감사해요"></div>
+                            <div class="img_box delivery_plaque_anim">
+                                <div class="anim_cont01">
+                                    <img src="images/scene02/delivery-plaque01.jpg"
+                                        alt="제 삶을 돌아보면서 내가 해야 할 일들에 대해 다시 생각해 보게 되었습니다">
+                                </div>
+                                <div class="anim_cont02">
+                                    <img src="images/scene02/delivery-plaque02.jpg"
+                                        alt="제 삶을 돌아보면서 내가 해야 할 일들에 대해 다시 생각해 보게 되었습니다">
+                                </div>
+                            </div>
+                            <script>
+                                // scroll event
+                                $(window).scroll(function(){
+                                    var st = $(this).scrollTop();
+                                    var evTop = $('.delivery_plaque_anim').offset().top - 500;
+                            
+                                    if(st>=evTop){
+                                        $('.delivery_plaque_anim > .anim_cont02 > img').addClass('on');
+                                    }else{
+                                        $('.delivery_plaque_anim > .anim_cont02 > img').removeClass('on');
+                                    }
+                                });
+                            </script>
                             <p>
                                 미래에 대한 그의 목표는 단순하고 명확합니다. “뭔가 세상에서 이루겠다는 목표가 이제 특별하게 없어요. 인간적인 욕심이 앞서게 될 때는 늘 마음이 불편했어요.
                                 그래서 저는 그런 본성이 앞서지 않도록 노력하고 있어요. 이룬 것이 많아 보이지만, 저는 참 미약한 존재입니다. 그런 제가 주변을 돌아보고 나눌 수 있는
