@@ -520,8 +520,10 @@ img {
 @media only all and (max-width: 767px) {
     .web03 .cover .cover_inner .item_img { margin: 11px auto 0; }
 
-    .web03 .anim_cont { position: relative; width: 100%; }
-    .web03 .anim_cont .cont_main { width: 85% !important; }
+    .web03 .reading_group_anim .anim_cont { position: relative; width: 100%; }
+    .web03 .reading_group_anim .anim_cont .cont_main { width: 85% !important; }
+
+    .web03 .contents_area .article_area article .art_conts .closing { width: 100%; }
 }
 /* flyingSeagull web04 */
 .web04 .cover .cover_outer { width: 100%; background: url(../images/flyingSeagull/seagull-cover-back.jpg) no-repeat; background-size: cover; background-position: center; }
@@ -603,6 +605,11 @@ img {
     .web04 .contents_area .article_area article .art_title span { margin-bottom: 0; }
     .web04 .contents_area .article_area .art04 .img_box { margin-bottom: 80px !important; }
     .web04 .contents_area .closing img { padding: 0; }
+
+    .web04 .learning_anim .anim_cont01 .cont01 { width: 50% !important; padding-right: 0 !important; }
+    .web04 .learning_anim .anim_cont01 .cont01.on { width: 50% !important; padding-right: 0 !important; }
+    .web04 .learning_anim .anim_cont01 .cont02 { width: 48% !important; padding-left: 0 !important; }
+    .web04 .learning_anim .anim_cont01 .cont02.on { width: 48% !important; padding-left: 0 !important; }
 }
 
 /* specialProgram web05 */
@@ -612,9 +619,9 @@ img {
 .web05 .contents_area .article_area .art03 .art_conts .description_box { width: 85%; }
 .web05 .contents_area .article_area .art_conts .letter_spacing_less { letter-spacing: -0.035em; }
 
-.web05 .contents_area .article_area .art_conts .closing .pc_display{ position: relative;overflow: hidden;width: 60%;height: auto;margin: 150px 0;}
-.web05 .contents_area .article_area article .art_conts .closing .pc_display img{width: 100%;height: 100%;} 
-.web05 .contents_area .article_area article .art_conts .closing.pc_display::before { content: '';position: absolute;top: 0;left: 0;width: 60%;height: 100%;
+.web05 .contents_area .article_area .art_conts .closing { position: relative;overflow: hidden;width: 60%;height: auto;margin: 150px 0;}
+.web05 .contents_area .article_area article .art_conts .closing img{width: 100%;height: 100%;} 
+.web05 .contents_area .article_area article .art_conts .closing::before { content: '';position: absolute;top: 0;left: 0;width: 60%;height: 100%;
     box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.5);
     animation: rotateAndPulse 3s infinite;
 }
@@ -639,21 +646,6 @@ img {
 .web05 .contents_area .article_area article .art_conts .closing .mobile_display::before { content: '';position: absolute;top: 0;left: 0;width: 60%;height: 100%;
     box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.5);
     animation: rotateAndPulse 3s infinite;
-}
-/* 애니메이션 정의 */
-@keyframes rotateAndPulse {
-    0% {
-        transform: scale(1) rotate(0deg);
-        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.2);
-    }
-    50% {
-        transform: scale(1.2) rotate(180deg);
-        box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.3);
-    }
-    100% {
-        transform: scale(1) rotate(360deg);
-        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.2);
-    }
 }
 
 /* chart */
@@ -712,6 +704,11 @@ img {
     .web06 .cover .cover_inner .item_img { margin: 11px auto 0; }
     .web06 .contents_area .article_area article .art_title span { margin-bottom: 0; }
     .web06 .contents_area { margin-bottom: 127px; }
+
+    .web06 .share_house_anim .anim_cont02 .cont01 { width: 50% !important; padding-right: 0 !important; }
+    .web06 .share_house_anim .anim_cont02 .cont01.on { width: 50% !important; padding-right: 0 !important; }
+    .web06 .share_house_anim .anim_cont02 .cont02 { width: 48% !important; padding-left: 0 !important; }
+    .web06 .share_house_anim .anim_cont02 .cont02.on { width: 48% !important; padding-left: 0 !important; }
 }
 
 /* scene02 web07 */
@@ -794,6 +791,11 @@ img {
     .web08 .contents_area .article_area article .art_conts .annotation span { font-weight: 700; line-height: 18px; }
     .web08 .contents_area .bottom { margin-top: 80px; }
     .web08 .contents_area .bottom img { width: 100%; }
+
+    .web08 .self_reliant_anim .anim_cont { width: 50% !important; padding-right: 0 !important; }
+    .web08 .self_reliant_anim .anim_cont { width: 50% !important; padding-right: 0 !important; }
+    .web08 .self_reliant_anim .anim_cont2 { width: 48% !important; padding-left: 0 !important; }
+    .web08 .self_reliant_anim .anim_cont2 { width: 48% !important; padding-left: 0 !important; }
 }
 
 /* news web09 */
