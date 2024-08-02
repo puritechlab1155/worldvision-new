@@ -472,7 +472,7 @@ img {
 .web03 .challengers_anim .anim_cont02 img { transform: translateY(-100%); opacity: 0; transition: 1s; }
 .web03 .challengers_anim .anim_cont02 img.on { transform: translateY(0); opacity: 1; }
 .web03 .challengers_anim .anim_cont03 { position: relative; z-index: 1; }
-.web03 .challengers_anim .anim_cont03 img { transform: translateY(100%); opacity: 0; transition: 0.5s; transition-delay: 1s; }
+.web03 .challengers_anim .anim_cont03 img { transform: translateY(100%); opacity: 0; transition: 1s; transition-delay: 1s; }
 .web03 .challengers_anim .anim_cont03 img.on { transform: translateY(0); opacity: 1; }
 .web03 .challengers_anim .anim_cont04 { position: relative; z-index: 2; }
 
