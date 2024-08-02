@@ -170,7 +170,27 @@
                                 alt="해외아동 디지털 편지 교류 안내"></div>
                     </article>
                     <article class="art art02">
-                        <div class="img_box flex_basis50"><img src="images/news/letters.jpg" alt="아이들이 편지를 쓰는 모습"></div>
+                        <div class="img_box flex_basis50 letters_anim">
+                            <div class="anim_cont01">
+                                <img src="images/news/letters01.jpg" alt="아이들이 편지를 쓰는 모습">
+                            </div>
+                            <div class="anim_cont02">
+                                <img src="images/news/letters02.jpg" alt="아이들이 편지를 쓰는 모습">
+                            </div>
+                        </div>
+                        <script>
+                            // scroll event
+                            $(window).scroll(function(){
+                                var st = $(this).scrollTop();
+                                var evTop = $('.letters_anim').offset().top - 500;
+                        
+                                if(st>=evTop){
+                                    $('.letters_anim > .anim_cont01 > img').addClass('on');
+                                }else{
+                                    $('.letters_anim > .anim_cont01 > img').removeClass('on');
+                                }
+                            });
+                        </script>
                         <ul class="flex_basis50 qa_list">
                             <li class="animate__animated">
                                 <div class="question"><span><img src="images/news/question-icon.jpg" alt=""></span>

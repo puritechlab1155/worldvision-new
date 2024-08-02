@@ -758,6 +758,11 @@ img {
 .web09 .contents_area .more_button a { display: inline-block; }
 .web09 .contents_area .code .tablet_display { display: none; }
 
+.web09 .letters_anim .anim_cont01 { position: relative; z-index: 1; }
+.web09 .letters_anim .anim_cont01 img { transform: translateY(100%); opacity: 0; transition: all 1s; }
+.web09 .letters_anim .anim_cont01 img.on { transform: translateY(0); opacity: 1; }
+.web09 .letters_anim .anim_cont02 { position: relative; z-index: 2; }
+
 .web09 .contents_area .more_button img {
     height: auto;
     display: block;}
