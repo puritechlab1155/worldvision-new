@@ -278,20 +278,7 @@ img {
 .main_idx #main #container .text_box p { font-weight: 500; font-size: 18px; line-height: 35px; }
 .main_idx #main #container .section01 { background: #F9A266; padding: 100px 0; }
 .main_idx #main #container .section01 #inner_wrap .img_box { position: relative; overflow: hidden; }
-.main_idx #main #container .section01 #inner_wrap .img_box img{ 
-    animation: scaleAnimation 3.5s infinite; /* 애니메이션을 3초 동안 무한 반복합니다. */ }
- /* 이미지 애니메이션을 정의합니다. */
- @keyframes scaleAnimation {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(0.95);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
+
 .main_idx #main #container .section01 .info { padding-left: 60px; color: #fff; }
 .main_idx #main #container .section01 .info h2 { margin-top: 13px; }
 .main_idx #main #container .section01 .flex_right .text_box { max-width: 407px; width: 100%; }
