@@ -703,7 +703,7 @@ img {
     display: block;}
 
 .web08 .contents_area .bottom .pulse {
-    animation: pulseEffect 3s infinite;
+    animation: pulseEffect 5s infinite;
 }
 
 @keyframes pulseEffect {
@@ -768,7 +768,7 @@ img {
     display: block;}
 
 .web09 .contents_area .more_button .pulse {
-    animation: pulseEffect 3s infinite;
+    animation: pulseEffect 5s infinite;
 }
 
 @keyframes pulseEffect {
