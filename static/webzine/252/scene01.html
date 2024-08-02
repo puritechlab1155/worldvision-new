@@ -66,7 +66,6 @@
     <script type="text/javascript" src="js/animateStyle.js"></script>
     <script type="text/javascript" src="js/pageCtrl.js"></script>
     <script type="text/javascript" src="js/protectImgText.js"></script>
-    <script src="js/jquery-1.12.4.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- //추가 css js 입력 -->
 </head>
@@ -86,63 +85,63 @@
             <a href="#footer">하단 영역 바로가기</a>
         </div>
         <!-- //스킵 NAV -->
-<!-- 전체 메뉴 팝업 -->
-<header id="header">
-    <!-- 상단 메뉴 -->
-    <div class="header_wrap">
-        <div class="logo">
-            <h1><a href="index.html"><img src="images/common/logo.png" alt="한국월드비전 웹진"><span class="hide">한국월드비전
-                        웹진</span></a></h1>
-        </div>
-        <div id="content-container" data-include-path="inc/util-vol.html"></div>
-        <div class="menu">
-            <button type="button">MENU</button>
-        </div>
-        <!--
-        <div class="angles mobile_display">
-            <img src="images/common/angle-down.svg" alt="아래로 펼치기" class="down">
-        </div>
-        -->
-    </div>
-    <!-- //상단 메뉴 -->
-</header>
-<div class="my_gnb" id="my_gnb">
-    <div class="gnb_wrap">
-        <div class="mn_top">
-            <div id="content-container" data-include-path="inc/util-vol-mobile.html"></div>
-            <div class="close_btn"><img src="images/common/menu-close.svg" alt="메뉴 닫기"></div>
-        </div>
-        <div id="content-container" data-include-path="inc/util-nav.html"></div>
-    </div>
-</div>
-<div class="my_gnb02 mobile_display" id="my_gnb02">
-    <div class="my_info02">
-        <a href="javascript:void(0);" class="btn_myinfo02"><span class="hide">최상단 메뉴</span></a>
-        <div class="my_lyr02">
-            <a href="javascript:void(0);" class="btn_myinfo02"><span class="hide">최상단 메뉴</span></a>
-            <div id="content-container" data-include-path="inc/util-login.html"></div>
-        </div>
-    </div>
-</div>
-<!-- //전체 메뉴 팝업 -->
-<script>
-    $('.my_gnb .gnb_wrap').hide();
 
-    $('.menu').click(function(){
-        $('.my_gnb').addClass('on');
-        $('.my_gnb .gnb_wrap').slideDown();
-    });
-    $('.close_btn').click(function(){
-        $('.my_gnb').removeClass('on');
-        $('.my_gnb .gnb_wrap').slideUp();
-    });
-</script>
- <script>
-    $('.my_gnb02').hide();
-    $('.angles').click(function(){
-        $('.my_gnb02').toggle();
-    });
-</script>
+        
+        <!-- 전체 메뉴 팝업 -->
+        <header id="header">
+            <!-- 상단 메뉴 -->
+            <div class="header_wrap">
+                <div class="logo">
+                    <h1><a href="index.html"><img src="images/common/logo.png" alt="한국월드비전 웹진"><span class="hide">한국월드비전
+                                웹진</span></a></h1>
+                </div>
+                <div id="content-container" data-include-path="https://puritechlab1155.github.io/worldvision/static/webzine/vol252/inc/util-vol.html"></div>
+                <div class="menu">
+                    <button type="button">MENU</button>
+                </div>
+                <div class="angles mobile_display">
+                    <img src="images/common/angle-down.svg" alt="아래로 펼치기" class="down">
+                </div>
+            </div>
+            <!-- //상단 메뉴 -->
+        </header>
+        <div class="my_gnb" id="my_gnb">
+        	<div class="gnb_wrap">
+                <div class="mn_top">
+                    <div id="content-container" data-include-path="https://puritechlab1155.github.io/worldvision/static/webzine/vol252/inc/util-vol-mobile.html"></div>
+                    <div class="close_btn"><img src="images/common/menu-close.svg" alt="메뉴 닫기"></div>
+                </div>
+                <div id="content-container" data-include-path="https://puritechlab1155.github.io/worldvision/static/webzine/vol252/inc/util-nav2.html"></div>
+            </div>
+        </div>
+        <div class="my_gnb02 mobile_display" id="my_gnb02">
+            <div class="my_info02">
+                <a href="javascript:void(0);" class="btn_myinfo02"><span class="hide">최상단 메뉴</span></a>
+                <div class="my_lyr02">
+                    <a href="javascript:void(0);" class="btn_myinfo02"><span class="hide">최상단 메뉴</span></a>
+                    <div id="content-container" data-include-path="https://puritechlab1155.github.io/worldvision/static/webzine/vol252/inc/util-login.html"></div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $('.my_gnb .gnb_wrap').hide();
+
+            $('.menu').click(function(){
+                $('.my_gnb').addClass('on');
+                $('.my_gnb .gnb_wrap').slideDown();
+            });
+            $('.close_btn').click(function(){
+                $('.my_gnb').removeClass('on');
+                $('.my_gnb .gnb_wrap').slideUp();
+            });
+        </script>
+         <script>
+            $('.my_gnb02').hide();
+            $('.angles').click(function(){
+                $('.my_gnb02').toggle();
+            });
+        </script>
+        <!-- //전체 메뉴 팝업 -->
 
         <!-- 콘텐츠 -->
         <section id="container">
@@ -207,8 +206,39 @@
                                 있습니다. 부싯돌 프로젝트는 지역에서 자립을 꿈꾸고 있는 청년들을 위한 실전형 취·창업 교육 프로그램인데요. 청년들은 7월까지 매달 생활비 60만 원을
                                 지원받고 부안군 내에 위치한 어울림쉐어하우스에 거주합니다.
                             </p>
-                            <div class="img_box"><img src="images/scene01/share-house.jpg"
-                                    alt="어울림 센터. 어울림쉐어하우스에서 생활하고 있는 근수씨"></div>
+                            <!-- <div class="img_box"><img src="images/scene01/share-house.jpg"
+                                    alt="어울림 센터. 어울림쉐어하우스에서 생활하고 있는 근수씨"></div> -->
+                            <div class="img_box share_house_anim">
+                                <div class="anim_cont01">
+                                    <img src="images/scene01/share-house01.jpg"
+                                        alt="어울림 센터. 어울림쉐어하우스에서 생활하고 있는 근수씨">
+                                </div>
+                                <div class="anim_cont02">
+                                    <img src="images/scene01/share-house02.jpg"
+                                        alt="어울림 센터. 어울림쉐어하우스에서 생활하고 있는 근수씨" class="cont01">
+                                    <img src="images/scene01/share-house03.jpg"
+                                        alt="어울림 센터. 어울림쉐어하우스에서 생활하고 있는 근수씨" class="cont02">
+                                </div>
+                                <div class="anim_cont03">
+                                    <img src="images/scene01/share-house04.jpg"
+                                        alt="어울림 센터. 어울림쉐어하우스에서 생활하고 있는 근수씨">
+                                </div>
+                            </div>
+                            <script>
+                                // scroll event
+                                $(window).scroll(function(){
+                                    var st = $(this).scrollTop();
+                                    var evTop = $('.share_house_anim').offset().top - 500;
+                            
+                                    if(st>=evTop){
+                                        $('.share_house_anim > .anim_cont01 > img').addClass('on');
+                                        $('.share_house_anim > .anim_cont02 > .cont01').addClass('on');
+                                    }else{
+                                        $('.share_house_anim > .anim_cont01 > img').removeClass('on');
+                                        $('.share_house_anim > .anim_cont02 > .cont01').removeClass('on');
+                                    }
+                                });
+                            </script>
                             <p>
                                 또한, 지역 명소와 특산물 등 지역 자원을 활용한 상품 및 서비스 기획개발 과정을 배우며 스스로 하고 싶은 일을 찾아갑니다. 아울러 또래 청년들과 폭넓은 소통
                                 기회를 통해 네트워크를 형성하는 과정을 거치며 사회화도 배워 가지요.
@@ -293,11 +323,17 @@
             });
         </script>
 
-        <!-- 플로팅 버튼
+        <!-- 플로팅 버튼 -->
         <div id="floating">
         </div>
-        //플로팅 버튼 -->
+        <!-- //플로팅 버튼 -->
     </div>
+
+    <script type="text/javascript" src="/resources/wvFrt/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/resources/wvFrt/js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="/resources/wvFrt/js/swiper.min.js"></script>
+    <script type="text/javascript" src="/resources/wvFrt/js/ui.js"></script>
+    <script type="text/javascript" src="/resources/wvFrt/js/cmsModule.js"></script>
 </body>
 
 </html>

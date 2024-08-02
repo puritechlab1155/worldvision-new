@@ -638,6 +638,14 @@ img {
 .web06 .cover .cover_inner .item_img.pc_display img { width: 29px; height: 265px; }
 .web06 .contents_area { margin-bottom: 275px; }
 
+.web06 .share_house_anim .anim_cont01 { position: relative; z-index: 1; }
+.web06 .share_house_anim .anim_cont01 img { transform: translateY(100%); opacity: 0; transition: all 0.5s; transition-delay: 0.5s; }
+.web06 .share_house_anim .anim_cont01 img.on { transform: translateY(0); opacity: 1; }
+.web06 .share_house_anim .anim_cont02 .cont01 { transform: translateX(100%); opacity: 0; transition: all 0.5s; position: relative; z-index: 2; }
+.web06 .share_house_anim .anim_cont02 .cont01.on { transform: translateY(0); opacity: 1; }
+.web06 .share_house_anim .anim_cont02 .cont02 { position: relative; z-index: 3; }
+.web06 .share_house_anim .anim_cont03 { position: relative; z-index: 4; }
+
 @media only all and (max-width: 767px) {
     .web06 .cover .cover_inner .item_img { margin: 11px auto 0; }
     .web06 .contents_area .article_area article .art_title span { margin-bottom: 0; }
