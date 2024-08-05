@@ -706,14 +706,14 @@ img {
 
     .web05 .graph02 .chart_two_mo { position: relative; }
     .web05 .graph02 .chart_two_mo::before { content: ''; width: 15%; height: 0; background: #dadada; position: absolute; left: 18%; bottom: 14.5%; transition: all 1s; }
-    .web05 .graph02 .chart_two_mo::after { content: ''; width: 15%; height: 0; background: #dadada; position: absolute; left: 69%; bottom: 14.5%; z-index: 3; transition: all 1s; transition-delay: 1s; }
+    .web05 .graph02 .chart_two_mo::after { content: ''; width: 15%; height: 0; background: #dadada; position: absolute; left: 68%; bottom: 14.5%; z-index: 3; transition: all 1s; transition-delay: 1s; }
     .web05 .graph02 .chart_two_mo .percentage01 { position: absolute; left: 19.5%; top: 17%; }
     .web05 .graph02 .chart_two_mo .percentage01 img { transform: translateY(30px); opacity: 0; transition: all 0.5s; transition-delay: 1s; padding: 0 !important; width: 60% !important; }
-    .web05 .graph02 .chart_two_mo .percentage02 { position: absolute; left: 66%; top: 30%; }
-    .web05 .graph02 .chart_two_mo .percentage02 img { transform: translateY(30px); opacity: 0; transition: all 0.5s; transition-delay: 2.5s; padding: 0 !important; width: 60% !important; }
+    .web05 .graph02 .chart_two_mo .percentage02 { position: absolute; left: 69%; top: 30%; }
+    .web05 .graph02 .chart_two_mo .percentage02 img { transform: translateY(30px); opacity: 0; transition: all 0.5s; transition-delay: 2s; padding: 0 !important; width: 60% !important; }
     
     .web05 .graph02 .chart_two_mo.on::before { content: ''; width: 15%; height: 57%; background: #dadada; position: absolute; left: 18%; bottom: 14.5%; }
-    .web05 .graph02 .chart_two_mo.on::after { content: ''; width: 15%; height: 42%; background: #dadada; position: absolute; left: 69%; bottom: 14.5%; z-index: 3; }
+    .web05 .graph02 .chart_two_mo.on::after { content: ''; width: 15%; height: 42%; background: #dadada; position: absolute; left: 68%; bottom: 14.5%; z-index: 3; }
     .web05 .graph02 .chart_two_mo .percentage01.on img { transform: translateY(0); opacity: 1; }
     .web05 .graph02 .chart_two_mo .percentage02.on img { transform: translateY(0); opacity: 1; }
 
