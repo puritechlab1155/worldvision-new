@@ -288,12 +288,14 @@
                                     alt="왼쪽부터 2022년에 조이타 어워드를 수상한 로지나 씨, 2023년에 수상한 아스마 씨. 우리는 월드비전이 떠나도 지역주민들이 책임감을 갖고 이 일을 계속 이어 나갈 수 있는 지속가능성에 집중하고 있습니다. 그래서 조사단계부터 주민들을 참여시키고 자치조직을 만들어서 주민 스스로 더욱 살기 좋은 마을로 발전시켜 나가도록 돕는 거죠. 주민들 역량이 더욱 강화되어 정부로부터 인증받는 지역 조직으로 성장하는 것이 목표입니다 - 피킹 참부공 방글라데시 월드비전 키쇼를곤즈 지역개발사업장 팀장">
                             </div>
 
-                            <div class="img_box last graph">
+                            <div class="img_box last graph graph01">
                                 <div class="chart">
-                                    <img class="" src="images/specialProgram/graph01.png"
+                                    <img class="" src="images/specialProgram/graph01-1.jpg"
                                         alt="다양한 소득원을 확보한 가정 비율. 사업 전(2018) 17%에서 사업 후(2022) 31.9%로 올랐다">
                                     <img src="images/specialProgram/Layer-9.png" alt="" class="overlay"
-                                        id="overlayImage">
+                                        id="overlayImage" style="z-index: 5;">
+                                    <span class="percentage01"><img src="images/specialProgram/percentage01.jpg" alt=""></span>
+                                    <span class="percentage02"><img src="images/specialProgram/percentage02.jpg" alt=""></span>
                                 </div>
                             </div>
                             <script>
@@ -312,14 +314,32 @@
                                         }
                                     });
                                 });
+
+                                $(window).scroll(function () {
+                                    var st = $(this).scrollTop();
+                                    var graphTop = $('.graph01').offset().top - 500;
+
+                                    if (st >= graphTop) {
+                                        $('.chart').addClass('on');
+                                        $('.chart span').addClass('on');
+
+                                        $('.chart_mo').addClass('on');
+                                        $('.chart_mo span').addClass('on');
+                                    } else {
+                                        $('.chart_mo').removeClass('on');
+                                        $('.chart_mo span').removeClass('on');
+                                    }
+                                });
                             </script>
 
-                            <div class="img_box last graph">
+                            <div class="img_box last graph graph01">
                                 <div class="chart_mo">
-                                    <img src="images/specialProgram/graph01-mo.jpg"
+                                    <img src="images/specialProgram/graph01-mo-1.jpg"
                                         alt="다양한 소득원을 확보한 가정 비율. 사업 전(2018) 17%에서 사업 후(2022) 31.9%로 올랐다">
                                     <img src="images/specialProgram/Layer-9.png" alt="" class="overlay_mo"
-                                        id="overlayImage_mo">
+                                        id="overlayImage_mo" style="z-index: 5;">
+                                    <span class="percentage01"><img src="images/specialProgram/percentage01.jpg" alt=""></span>
+                                    <span class="percentage02"><img src="images/specialProgram/percentage02.jpg" alt=""></span>
                                 </div>
                             </div>
                             <script>
@@ -372,12 +392,14 @@
                                 영양성분, 아동을 위한 필수 영양소, 이유식 조리법까지 상세하게 알려주고 있습니다. 지역 내 영양 이상이 있는 것으로 조사된 아이들 13명도 교육에 참여하여
                                 엄마들이 연습한 영양가 있는 음식을 먹고 있어요. 히나 씨는 아이들과 엄마들의 변화를 보며 오늘도 힘내서 일합니다.
                             </p>
-                            <div class="img_box last graph">
+                            <div class="img_box last graph graph02">
                                 <div class="chart_two">
-                                    <img src="images/specialProgram/graph02.png"
+                                    <img src="images/specialProgram/graph02-1.jpg"
                                         alt="6~59개월 저체중(나이 대비 체중) 아동 비율. 사업 전(2012) 35.9% 에서 사업 후(2021) 23.5% 로 줄었다.">
                                     <img src="images/specialProgram/Layer-10.png" alt="" class="overlay_two"
-                                        id="overlayImage_two">
+                                        id="overlayImage_two" style="z-index: 5;">
+                                    <span class="percentage01"><img src="images/specialProgram/percentage03.jpg" alt=""></span>
+                                    <span class="percentage02"><img src="images/specialProgram/percentage04.jpg" alt=""></span>
                                 </div>
                             </div>
 
@@ -397,14 +419,35 @@
                                         }
                                     });
                                 });
+
+                                $(window).scroll(function () {
+                                    var st = $(this).scrollTop();
+                                    var graphTop = $('.graph02').offset().top - 500;
+
+                                    if (st >= graphTop) {
+                                        $('.chart_two').addClass('on');
+                                        $('.chart_two span').addClass('on');
+
+                                        $('.chart_two_mo').addClass('on');
+                                        $('.chart_two_mo span').addClass('on');
+                                    } else {
+                                        $('.chart_two').removeClass('on');
+                                        $('.chart_two span').removeClass('on');
+
+                                        $('.chart_two_mo').removeClass('on');
+                                        $('.chart_two_mo span').removeClass('on');
+                                    }
+                                });
                             </script>
 
-                            <div class="img_box last graph">
+                            <div class="img_box last graph graph02">
                                 <div class="chart_two_mo">
-                                    <img src="images/specialProgram/graph02-mo.jpg"
+                                    <img src="images/specialProgram/graph02-mo-1.jpg"
                                         alt="6~59개월 저체중(나이 대비 체중) 아동 비율. 사업 전(2012) 35.9% 에서 사업 후(2021) 23.5% 로 줄었다.">
                                     <img src="images/specialProgram/Layer-10.png" alt="" class="overlay_two_mo"
-                                        id="overlayImage_two_mo">
+                                        id="overlayImage_two_mo" style="z-index: 5;">
+                                    <span class="percentage01"><img src="images/specialProgram/percentage03.jpg" alt=""></span>
+                                    <span class="percentage02"><img src="images/specialProgram/percentage04.jpg" alt=""></span>
                                 </div>
                             </div>
 
