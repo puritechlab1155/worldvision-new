@@ -289,77 +289,32 @@
                             </div>
 
                             <div class="img_box last graph graph01">
+                                <div class="chart_title">다양한 소득원을 확보한 가정 비율</div>
+                                <div class="chart_arrow"><img src="images/specialProgram/arrow.png" alt=""></div>
                                 <div class="chart">
-                                    <img class="" src="images/specialProgram/graph01-1.jpg"
-                                        alt="다양한 소득원을 확보한 가정 비율. 사업 전(2018) 17%에서 사업 후(2022) 31.9%로 올랐다">
-                                    <img src="images/specialProgram/Layer-9.png" alt="" class="overlay"
-                                        id="overlayImage" style="z-index: 5;">
-                                    <span class="percentage01"><img src="images/specialProgram/percentage01.jpg" alt=""></span>
-                                    <span class="percentage02"><img src="images/specialProgram/percentage02.jpg" alt=""></span>
+                                    <div class="stick stick01"></div>
+                                    <div class="stick stick02"></div>
+                                    <div class="stick stick03"></div>
+                                    <div class="stick stick04"></div>
+                                    <div class="stick stick05"></div>
+                                </div>
+                                <div class="chart_cap">
+                                    <span>사업 전(2018)</span>
+                                    <span>사업 후(2022)</span>
                                 </div>
                             </div>
                             <script>
-                                document.addEventListener('DOMContentLoaded', function () {
-                                    const overlayImage = document.getElementById('overlayImage');
-
-                                    window.addEventListener('scroll', function () {
-                                        const chart = document.querySelector('.chart');
-                                        const chartPosition = chart.getBoundingClientRect().top;
-                                        const screenPosition = window.innerHeight / 1.5;
-
-                                        if (chartPosition < screenPosition) {
-                                            overlayImage.classList.add('show');
-                                        } else {
-                                            overlayImage.classList.remove('show');
-                                        }
-                                    });
-                                });
-
                                 $(window).scroll(function () {
                                     var st = $(this).scrollTop();
                                     var graphTop = $('.graph01').offset().top - 500;
 
                                     if (st >= graphTop) {
-                                        $('.chart').addClass('on');
-                                        $('.chart span').addClass('on');
-
-                                        $('.chart_mo').addClass('on');
-                                        $('.chart_mo span').addClass('on');
+                                        $('.chart .stick').addClass('on');
+                                        $('.graph01 .chart_arrow').addClass('on');
                                     } else {
-                                        $('.chart').removeClass('on');
-                                        $('.chart span').removeClass('on');
-
-                                        $('.chart_mo').removeClass('on');
-                                        $('.chart_mo span').removeClass('on');
+                                        $('.chart .stick').removeClass('on');
+                                        $('.graph01 .chart_arrow').removeClass('on');
                                     }
-                                });
-                            </script>
-
-                            <div class="img_box last graph graph01">
-                                <div class="chart_mo">
-                                    <img src="images/specialProgram/graph01-mo-1.jpg"
-                                        alt="다양한 소득원을 확보한 가정 비율. 사업 전(2018) 17%에서 사업 후(2022) 31.9%로 올랐다">
-                                    <img src="images/specialProgram/Layer-9.png" alt="" class="overlay_mo"
-                                        id="overlayImage_mo" style="z-index: 5;">
-                                    <span class="percentage01"><img src="images/specialProgram/percentage01.jpg" alt=""></span>
-                                    <span class="percentage02"><img src="images/specialProgram/percentage02.jpg" alt=""></span>
-                                </div>
-                            </div>
-                            <script>
-                                document.addEventListener('DOMContentLoaded', function () {
-                                    const overlayImage_mo = document.getElementById('overlayImage_mo');
-
-                                    window.addEventListener('scroll', function () {
-                                        const chart_mo = document.querySelector('.chart_mo');
-                                        const chartPosition = chart_mo.getBoundingClientRect().top;
-                                        const screenPosition = window.innerHeight / 1.5;
-
-                                        if (chartPosition < screenPosition) {
-                                            overlayImage_mo.classList.add('show');
-                                        } else {
-                                            overlayImage_mo.classList.remove('show');
-                                        }
-                                    });
                                 });
                             </script>
                         </div>
@@ -396,79 +351,33 @@
                                 엄마들이 연습한 영양가 있는 음식을 먹고 있어요. 히나 씨는 아이들과 엄마들의 변화를 보며 오늘도 힘내서 일합니다.
                             </p>
                             <div class="img_box last graph graph02">
+                                <div class="chart_title">6~59개월 저체중(나이 대비 체중) 아동 비율</div>
+                                <div class="chart_arrow"><img src="images/specialProgram/arrow_down.png" alt=""></div>
                                 <div class="chart_two">
-                                    <img src="images/specialProgram/graph02-1.jpg"
-                                        alt="6~59개월 저체중(나이 대비 체중) 아동 비율. 사업 전(2012) 35.9% 에서 사업 후(2021) 23.5% 로 줄었다.">
-                                    <img src="images/specialProgram/Layer-10.png" alt="" class="overlay_two"
-                                        id="overlayImage_two" style="z-index: 5;">
-                                    <span class="percentage01"><img src="images/specialProgram/percentage03.jpg" alt=""></span>
-                                    <span class="percentage02"><img src="images/specialProgram/percentage04.jpg" alt=""></span>
+                                    <div class="stick stick01"></div>
+                                    <div class="stick stick02"></div>
+                                    <div class="stick stick03"></div>
+                                    <div class="stick stick04"></div>
+                                    <div class="stick stick05"></div>
+                                </div>
+                                <div class="chart_cap">
+                                    <span>사업 전(2012)</span>
+                                    <span>사업 후(2021)</span>
                                 </div>
                             </div>
 
                             <script>
-                                document.addEventListener('DOMContentLoaded', function () {
-                                    const overlayImage_two = document.getElementById('overlayImage_two');
-
-                                    window.addEventListener('scroll', function () {
-                                        const chart_two = document.querySelector('.chart_two');
-                                        const chartPosition = chart_two.getBoundingClientRect().top;
-                                        const screenPosition = window.innerHeight / 1.5;
-
-                                        if (chartPosition < screenPosition) {
-                                            overlayImage_two.classList.add('show');
-                                        } else {
-                                            overlayImage_two.classList.remove('show');
-                                        }
-                                    });
-                                });
-
                                 $(window).scroll(function () {
                                     var st = $(this).scrollTop();
                                     var graphTop = $('.graph02').offset().top - 500;
 
                                     if (st >= graphTop) {
-                                        $('.chart_two').addClass('on');
-                                        $('.chart_two span').addClass('on');
-
-                                        $('.chart_two_mo').addClass('on');
-                                        $('.chart_two_mo span').addClass('on');
+                                        $('.chart_two .stick').addClass('on');
+                                        $('.graph02 .chart_arrow').addClass('on');
                                     } else {
-                                        $('.chart_two').removeClass('on');
-                                        $('.chart_two span').removeClass('on');
-
-                                        $('.chart_two_mo').removeClass('on');
-                                        $('.chart_two_mo span').removeClass('on');
+                                        $('.chart_two .stick').removeClass('on');
+                                        $('.graph02 .chart_arrow').removeClass('on');
                                     }
-                                });
-                            </script>
-
-                            <div class="img_box last graph graph02">
-                                <div class="chart_two_mo">
-                                    <img src="images/specialProgram/graph02-mo-1.jpg"
-                                        alt="6~59개월 저체중(나이 대비 체중) 아동 비율. 사업 전(2012) 35.9% 에서 사업 후(2021) 23.5% 로 줄었다.">
-                                    <img src="images/specialProgram/Layer-10.png" alt="" class="overlay_two_mo"
-                                        id="overlayImage_two_mo" style="z-index: 5;">
-                                    <span class="percentage01"><img src="images/specialProgram/percentage03.jpg" alt=""></span>
-                                    <span class="percentage02"><img src="images/specialProgram/percentage04.jpg" alt=""></span>
-                                </div>
-                            </div>
-
-                            <script>
-                                document.addEventListener('DOMContentLoaded', function () {
-                                    const overlayImage_two_mo = document.getElementById('overlayImage_two_mo');
-
-                                    window.addEventListener('scroll', function () {
-                                        const chart_two_mo = document.querySelector('.chart_two_mo');
-                                        const chartPosition = chart_two_mo.getBoundingClientRect().top;
-                                        const screenPosition = window.innerHeight / 1.5;
-
-                                        if (chartPosition < screenPosition) {
-                                            overlayImage_two_mo.classList.add('show');
-                                        } else {
-                                            overlayImage_two_mo.classList.remove('show');
-                                        }
-                                    });
                                 });
                             </script>
                         </div>

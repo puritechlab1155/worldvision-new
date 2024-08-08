@@ -636,18 +636,28 @@ img {
 .web05 .contents_area .img_box .chart .overlay { position: absolute;top: 27.5%; left: 18%; width: 64%; height: 36.5%; clip-path: inset(0 100% 0 0); /* 초기 상태, 완전히 숨김 */transition: clip-path 2s ease;} 
 .web05 .contents_area .img_box .chart .show {clip-path: inset(0 0 0 0); /* 애니메이션 후, 완전히 보이게 */}
 
-.web05 .graph01 .chart { position: relative; }
-.web05 .graph01 .chart::before { content: ''; width: 50px; height: 0; background: #dadada; position: absolute; left: 12.5%; bottom: 14.5%; transition: all 1s; }
-.web05 .graph01 .chart::after { content: ''; width: 50px; height: 0; background: #dadada; position: absolute; left: 75%; bottom: 14.5%; z-index: 3; transition: all 1s; transition-delay: 1.5s; }
-.web05 .graph01 .chart .percentage01 { position: absolute; left: 14%; top: 50%; }
-.web05 .graph01 .chart .percentage01 img { transform: translateY(30px); opacity: 0; transition: all 0.5s; transition-delay: 1s; }
-.web05 .graph01 .chart .percentage02 { position: absolute; left: 75%; top: 17%; }
-.web05 .graph01 .chart .percentage02 img { transform: translateY(30px); opacity: 0; transition: all 0.5s; transition-delay: 2.5s; }
+.web05 .graph01 { width: 100%; max-width: 415px; height: 380px; position: relative; }
+.web05 .graph01 .chart_title { width: 100%; max-width: 357px; height: 33px; background: #f56400; color: #fff; font-weight: 500; text-align: center; border-radius: 999px; padding-top: 2px; margin: 0 auto; }
+.web05 .graph01 .chart_arrow { position: absolute; left: 20%; top: 25%; width: 0; transition: all 1.3s; transition-delay: 1.7s; }
+.web05 .graph01 .chart { width: 100%; height: 207px; display: flex; justify-content: space-between; align-items: flex-end; padding: 0 30px; position: absolute; left: 50%; transform: translateX(-50%); top: 103px; }
+.web05 .graph01 .chart .stick { width: 50px; background: #dcdddd; }
+.web05 .graph01 .chart .stick01 { height: 0; position: relative; transition: all 0.3s; }
+.web05 .graph01 .chart .stick01::before { content: ''; width: 36px; height: 18px; background: url(../images/specialProgram/percentage01.png) no-repeat; background-size: contain; position: absolute; left: 50%; transform: translateX(-50%) translateY(10px); opacity: 0; bottom: 130%; transition: all 0.5s; transition-delay: 0.5s; }
+.web05 .graph01 .chart .stick02 { height: 0; transition: all 0.3s; transition-delay: 0.3s; }
+.web05 .graph01 .chart .stick03 { height: 0; transition: all 0.3s; transition-delay: 0.6s; }
+.web05 .graph01 .chart .stick04 { height: 0; transition: all 0.3s; transition-delay: 0.9s; }
+.web05 .graph01 .chart .stick05 { height: 0; background: #f56400; position: relative; transition: all 0.5s; transition-delay: 1.2s; }
+.web05 .graph01 .chart .stick05::before { content: ''; width: 52px; height: 18px; background: url(../images/specialProgram/percentage02.png) no-repeat; background-size: contain; position: absolute; left: 50%; transform: translateX(-50%) translateY(10px); opacity: 0; bottom: 112%; transition: all 0.5s; transition-delay: 1.5s; }
+.web05 .graph01 .chart_cap { display: flex; justify-content: space-between; font-weight: 500; color: #f56400; padding: 10px 15px 0; border-top: 1px solid #231815; position: absolute; left: 0; bottom: 0; width: 100%; }
 
-.web05 .graph01 .chart.on::before { content: ''; width: 50px; height: 23%; background: #dadada; position: absolute; left: 12.5%; bottom: 14.5%; }
-.web05 .graph01 .chart.on::after { content: ''; width: 50px; height: 57%; background: #dadada; position: absolute; left: 75%; bottom: 14.5%; z-index: 3; }
-.web05 .graph01 .chart .percentage01.on img { transform: translateY(0); opacity: 1; }
-.web05 .graph01 .chart .percentage02.on img { transform: translateY(0); opacity: 1; }
+.web05 .graph01 .chart_arrow.on { width: 100%; }
+.web05 .graph01 .chart .stick01.on { height: 84px; }
+.web05 .graph01 .chart .stick01.on::before { transform: translateX(-50%) translateY(0); opacity: 1; }
+.web05 .graph01 .chart .stick02.on { height: 102px; }
+.web05 .graph01 .chart .stick03.on { height: 136px; }
+.web05 .graph01 .chart .stick04.on { height: 175px; }
+.web05 .graph01 .chart .stick05.on { height: 207px; background: #f56400; position: relative; }
+.web05 .graph01 .chart .stick05.on::before { transform: translateX(-50%) translateY(0); opacity: 1; }
 
 /* chart_two */
 .web05 .contents_area .img_box .chart_two_mo { display: none;}
@@ -656,66 +666,55 @@ img {
 .web05 .contents_area .img_box .chart_two .overlay_two { position: absolute; top: 27%; left: 18%; width: 64%; height: 18%; clip-path: inset(0 100% 0 0); /* 초기 상태, 완전히 숨김 */transition: clip-path 2s ease;}
 .web05 .contents_area .img_box .chart_two .show {clip-path: inset(0 0 0 0); /* 애니메이션 후, 완전히 보이게 */}
 
-.web05 .graph02 .chart_two { position: relative; }
-.web05 .graph02 .chart_two::before { content: ''; width: 50px; height: 0; background: #dadada; position: absolute; left: 12.5%; bottom: 14.5%; transition: all 1s; }
-.web05 .graph02 .chart_two::after { content: ''; width: 50px; height: 0; background: #dadada; position: absolute; left: 75%; bottom: 14.5%; z-index: 3; transition: all 1s; transition-delay: 1s; }
-.web05 .graph02 .chart_two .percentage01 { position: absolute; left: 14%; top: 17%; }
-.web05 .graph02 .chart_two .percentage01 img { transform: translateY(30px); opacity: 0; transition: all 0.5s; transition-delay: 1s; }
-.web05 .graph02 .chart_two .percentage02 { position: absolute; left: 75%; top: 33%; }
-.web05 .graph02 .chart_two .percentage02 img { transform: translateY(30px); opacity: 0; transition: all 0.5s; transition-delay: 2.5s; }
+.web05 .graph02 { width: 100%; max-width: 415px; height: 380px; position: relative; }
+.web05 .graph02 .chart_title { width: 100%; max-width: 357px; height: 33px; background: #f56400; color: #fff; font-weight: 500; text-align: center; border-radius: 999px; padding-top: 2px; margin: 0 auto; }
+.web05 .graph02 .chart_arrow { position: absolute; left: 30%; top: 30%; width: 0; transition: all 1.3s; transition-delay: 1.7s; }
+.web05 .graph02 .chart_two { width: 100%; height: 207px; display: flex; justify-content: space-between; align-items: flex-end; padding: 0 30px; position: absolute; left: 50%; transform: translateX(-50%); top: 103px; }
+.web05 .graph02 .chart_two .stick { width: 50px; background: #dcdddd; }
+.web05 .graph02 .chart_two .stick01 { height: 0; background: #f56400; position: relative; transition: all 0.3s; }
+.web05 .graph02 .chart_two .stick01::before { content: ''; width: 55px; height: 18px; background: url(../images/specialProgram/percentage03.png) no-repeat; background-size: contain; position: absolute; left: 50%; transform: translateX(-50%) translateY(10px); opacity: 0; bottom: 112%; transition: all 0.5s; transition-delay: 0.5s; }
+.web05 .graph02 .chart_two .stick02 { height: 0; transition: all 0.3s; transition-delay: 0.3s; }
+.web05 .graph02 .chart_two .stick03 { height: 0; transition: all 0.3s; transition-delay: 0.6s; }
+.web05 .graph02 .chart_two .stick04 { height: 0; transition: all 0.3s; transition-delay: 0.9s; }
+.web05 .graph02 .chart_two .stick05 { height: 0; position: relative; transition: all 0.5s; transition-delay: 1.2s; }
+.web05 .graph02 .chart_two .stick05::before { content: ''; width: 55px; height: 18px; background: url(../images/specialProgram/percentage04.png) no-repeat; background-size: contain; position: absolute; left: 50%; transform: translateX(-50%) translateY(10px); opacity: 0; bottom: 130%; transition: all 0.5s; transition-delay: 1.5s; }
+.web05 .graph02 .chart_cap { display: flex; justify-content: space-between; font-weight: 500; color: #f56400; padding: 10px 15px 0; border-top: 1px solid #231815; position: absolute; left: 0; bottom: 0; width: 100%; }
 
-.web05 .graph02 .chart_two.on::before { content: ''; width: 50px; height: 57%; background: #dadada; position: absolute; left: 12.5%; bottom: 14.5%; }
-.web05 .graph02 .chart_two.on::after { content: ''; width: 50px; height: 42%; background: #dadada; position: absolute; left: 75%; bottom: 14.5%; z-index: 3; }
-.web05 .graph02 .chart_two .percentage01.on img { transform: translateY(0); opacity: 1; }
-.web05 .graph02 .chart_two .percentage02.on img { transform: translateY(0); opacity: 1; }
+.web05 .graph02 .chart_arrow.on { width: 100%; }
+.web05 .graph02 .chart_two .stick01.on { height: 207px; }
+.web05 .graph02 .chart_two .stick01.on::before { transform: translateX(-50%) translateY(0); opacity: 1; }
+.web05 .graph02 .chart_two .stick02.on { height: 175px; }
+.web05 .graph02 .chart_two .stick03.on { height: 136px; }
+.web05 .graph02 .chart_two .stick04.on { height: 102px; }
+.web05 .graph02 .chart_two .stick05.on { height: 84px; position: relative; }
+.web05 .graph02 .chart_two .stick05.on::before { transform: translateX(-50%) translateY(0); opacity: 1; }
 
 @media only all and (max-width: 767px) {
-    .web05.cover .cover_outer .main_area img{ width: 100%; min-height: 170px; height: 170px;}
+    .web05 .cover .cover_outer .main_area img{ width: 100%; min-height: 170px; height: 170px;}
     .web05 .cover .cover_inner .item_img { margin: 11px auto 0; }
     .web05 .contents_area .intro { margin-top: 0; }
     .web05 .contents_area .article_area article .art_conts .graph img { padding: 0 25px;}
     .web05 .contents_area .article_area .art03 .art_conts .description_box { width: 100%; }
-    .web05 .contents_area .graph { padding:  0 50px; }
 
     /* chart_mobile */
-    .web05 .contents_area .img_box .chart { display: none;}
-    .web05 .contents_area .img_box .chart_mo { display: block; width: 100%; max-width: 400px; margin-left: 0; position: relative; }
-    .web05 .contents_area .img_box .chart_mo img {/* position: absolute; */ display: block; width: 100%;}
-    .web05 .contents_area .img_box .chart_mo .overlay_mo { position: absolute; top: 27%; left: 13.6%; width: 72.5% !important; height: 37%; clip-path: inset(0 100% 0 0); /* 초기 상태, 완전히 숨김 */transition: clip-path 2s ease;}
-    .web05 .contents_area .img_box .chart_mo .show { clip-path: inset(0 0 0 0); /* 애니메이션 후, 완전히 보이게 */}
-
-    .web05 .graph01 .chart_mo { position: relative; }
-    .web05 .graph01 .chart_mo::before { content: ''; width: 15%; height: 0; background: #dadada; position: absolute; left: 17%; bottom: 14.5%; transition: all 1s; }
-    .web05 .graph01 .chart_mo::after { content: ''; width: 15%; height: 0; background: #dadada; position: absolute; left: 68%; bottom: 14.5%; z-index: 3; transition: all 1s; transition-delay: 1.5s; }
-    .web05 .graph01 .chart_mo .percentage01 { position: absolute; left: 21%; top: 49%; }
-    .web05 .graph01 .chart_mo .percentage01 img { transform: translateY(30px); opacity: 0; transition: all 0.5s; transition-delay: 1s; padding: 0 !important; width: 60% !important; }
-    .web05 .graph01 .chart_mo .percentage02 { position: absolute; left: 68%; top: 16%; }
-    .web05 .graph01 .chart_mo .percentage02 img { transform: translateY(30px); opacity: 0; transition: all 0.5s; transition-delay: 2.5s; padding: 0 !important; width: 60% !important; }
+    .web05 .graph01 { height: 364px; }
+    .web05 .graph01 .chart_title { height: 25px; font-size: 12px; }
+    .web05 .graph01 .chart_arrow { left: 7%; top: 27%; }
+    .web05 .graph01 .chart { padding: 0 15px; }
+    .web05 .graph01 .chart .stick { width: 40px; }
+    .web05 .graph01 .chart_cap { font-size: 12px; }
     
-    .web05 .graph01 .chart_mo.on::before { content: ''; width: 15%; height: 23%; background: #dadada; position: absolute; left: 17%; bottom: 14.5%; }
-    .web05 .graph01 .chart_mo.on::after { content: ''; width: 15%; height: 57%; background: #dadada; position: absolute; left: 68%; bottom: 14.5%; z-index: 3; }
-    .web05 .graph01 .chart_mo .percentage01.on img { transform: translateY(0); opacity: 1; }
-    .web05 .graph01 .chart_mo .percentage02.on img { transform: translateY(0); opacity: 1; }
+    .web05 .graph01 .chart_arrow.on { width: 70%; }
 
     /* chart_two_mobile */
-    .web05 .contents_area .img_box .chart_two { display: none;}
-    .web05 .contents_area .img_box .chart_two_mo { display: block; width: 100%; max-width: 400px; margin-left: 0; position: relative; }
-    .web05 .contents_area .img_box .chart_two_mo img {/* position: absolute; */ display: block; width: 100%;}
-    .web05 .contents_area .img_box .chart_two_mo .overlay_two_mo { position: absolute; top: 27.5%; left: 15%; width: 70% !important; height: 17.5%; clip-path: inset(0 100% 0 0); /* 초기 상태, 완전히 숨김 */transition: clip-path 2s ease;}
-    .web05 .contents_area .img_box .chart_two_mo .show { clip-path: inset(0 0 0 0); /* 애니메이션 후, 완전히 보이게 */}
-
-    .web05 .graph02 .chart_two_mo { position: relative; }
-    .web05 .graph02 .chart_two_mo::before { content: ''; width: 15%; height: 0; background: #dadada; position: absolute; left: 18%; bottom: 14.5%; transition: all 1s; }
-    .web05 .graph02 .chart_two_mo::after { content: ''; width: 15%; height: 0; background: #dadada; position: absolute; left: 68%; bottom: 14.5%; z-index: 3; transition: all 1s; transition-delay: 1s; }
-    .web05 .graph02 .chart_two_mo .percentage01 { position: absolute; left: 19.5%; top: 17%; }
-    .web05 .graph02 .chart_two_mo .percentage01 img { transform: translateY(30px); opacity: 0; transition: all 0.5s; transition-delay: 1s; padding: 0 !important; width: 60% !important; }
-    .web05 .graph02 .chart_two_mo .percentage02 { position: absolute; left: 69%; top: 30%; }
-    .web05 .graph02 .chart_two_mo .percentage02 img { transform: translateY(30px); opacity: 0; transition: all 0.5s; transition-delay: 2s; padding: 0 !important; width: 60% !important; }
+    .web05 .graph02 { height: 364px; }
+    .web05 .graph02 .chart_title { height: 25px; font-size: 12px; }
+    .web05 .graph02 .chart_arrow { left: 17%; top: 30%; }
+    .web05 .graph02 .chart_two { padding: 0 15px; }
+    .web05 .graph02 .chart_two .stick { width: 40px; }
+    .web05 .graph02 .chart_cap { font-size: 12px; }
     
-    .web05 .graph02 .chart_two_mo.on::before { content: ''; width: 15%; height: 57%; background: #dadada; position: absolute; left: 18%; bottom: 14.5%; }
-    .web05 .graph02 .chart_two_mo.on::after { content: ''; width: 15%; height: 42%; background: #dadada; position: absolute; left: 68%; bottom: 14.5%; z-index: 3; }
-    .web05 .graph02 .chart_two_mo .percentage01.on img { transform: translateY(0); opacity: 1; }
-    .web05 .graph02 .chart_two_mo .percentage02.on img { transform: translateY(0); opacity: 1; }
+    .web05 .graph02 .chart_arrow.on { width: 70%; }
 
     .web05 .contents_area .article_area article .art_conts .closing { width: 100%; margin: 80px 0; }
     .web05 .contents_area .article_area article .art_conts .closing{ position: relative;overflow: hidden;width: 100%;height: auto; margin-top: 80px;}
